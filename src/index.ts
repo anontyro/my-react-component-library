@@ -8,6 +8,8 @@ import {
 } from './PageHeadings/components/HeadingStyles';
 import * as CONSTS from './consts';
 import Hl from './Highlighter';
+import PortfolioCard from './Card/PortfolioCard';
+import BaseCard from './Card/BaseCard';
 export {
   MainButton,
   PageHeadings,
@@ -17,4 +19,6 @@ export {
   Heading4,
   CONSTS,
   Hl,
+  PortfolioCard,
+  BaseCard,
 };

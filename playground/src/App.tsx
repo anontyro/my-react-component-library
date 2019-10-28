@@ -1,5 +1,9 @@
 import React from 'react';
-import {PageHeadings, Hl} from './component-lib';
+import styled from 'styled-components';
+import {PageHeadings, Hl, BaseCard, PortfolioCard} from './component-lib';
+
+const TitleStyle = styled.div``;
+const TestTitle = () => <TitleStyle>Text is here</TitleStyle>;
 
 const App: React.FC = () => {
   return (
@@ -10,6 +14,13 @@ const App: React.FC = () => {
       <p>
         Some text <Hl>Highlighted</Hl>
       </p>
+      <BaseCard>
+        {{
+          header: <TestTitle />,
+          content: <p>Main content</p>,
+        }}
+      </BaseCard>
+      <PortfolioCard title="This is a portfolio" />
     </div>
   );
 };
