@@ -3,7 +3,7 @@ import {storiesOf} from '@storybook/react';
 import {withKnobs, text, boolean} from '@storybook/addon-knobs';
 import {PageHeadings} from '../component-lib';
 
-const stories = storiesOf ('PageHeaders', module);
+const stories = storiesOf ('Page Heading', module);
 
 stories.addParameters ({
   component: 'PageHeadings',
@@ -11,7 +11,7 @@ stories.addParameters ({
 
 stories.addDecorator (withKnobs);
 
-stories.add ('Page Heading', () => {
+stories.add ('PageHeadings', () => {
   const label = text ('Text', 'This is a H1 Header');
   const outline = boolean ('Has Border', false);
   const type = text ('Heading Type', 'h1');

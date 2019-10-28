@@ -7,6 +7,7 @@ import {
   Heading4,
 } from './PageHeadings/components/HeadingStyles';
 import * as CONSTS from './consts';
+import Hl from './Highlighter';
 export {
   MainButton,
   PageHeadings,
@@ -15,4 +16,5 @@ export {
   Heading3,
   Heading4,
   CONSTS,
+  Hl,
 };
