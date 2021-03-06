@@ -16,7 +16,7 @@ enum HtmlHeading {
 interface Props {
   text: string;
   type?: HtmlHeading | string;
-  style?: CSS;
+  style?: any;
   outline?: boolean;
 }
 
